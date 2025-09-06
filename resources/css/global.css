@@ -1,0 +1,40 @@
+.custom-shadow {
+    box-shadow:
+      0px 1px 2px rgba(16, 24, 40, 0.06),
+      0px 1px 3px rgba(16, 24, 40, 0.1);
+}
+body {
+    font-family: "Outfit", sans-serif;
+    color: #292929;
+}
+aside nav a svg path {
+    transition: all 0.3s ease;
+}
+input[type="checkbox"]:checked + .checkmark svg {
+    display: block;
+}
+input[type="radio"]:checked + .radiomark svg {
+    display: block;
+}
+select {
+    background: #fff url('/resources/images/dropdown-icon.svg') no-repeat scroll 90% center/13px 6px;
+}
+.select-field {
+    background-position: 95% center;
+}
+.flatpickr-calendar {
+    font-family: "Outfit", sans-serif !important;
+}
+.flatpickr-day.today, .flatpickr-day.today:hover, .flatpickr-day.today:focus, .flatpickr-day:hover, .flatpickr-day:focus {
+    background: #FFCD05 !important;
+    color: #393939 !important;
+}
+.flatpickr-day.selected,.flatpickr-day.startRange, .flatpickr-day.endRange {
+    background: #FFCD05 !important;
+    color: #393939 !important;
+    border-color: #e6e6e6 !important;
+}
+.flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)), .flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)), .flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1)) {
+    -webkit-box-shadow: -10px 0 0 #e6e6e6 !important;
+    box-shadow: -10px 0 0 #e6e6e6 !important;
+}
